@@ -7,7 +7,7 @@
     <packaging>war</packaging>
     <version>2.0</version>
     <name>Vaadin Addressbook example</name>
-	
+
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <failOnMissingWebXml>false</failOnMissingWebXml>
@@ -19,10 +19,6 @@
     <sonar.dynamicAnalysis>reuseReports</sonar.dynamicAnalysis>
     <sonar.jacoco.reportPath>${project.basedir}/../target/jacoco.exec</sonar.jacoco.reportPath>
     <sonar.language>java</sonar.language>
-    <sonar.host.url>http:172.31.10.138:9000/</sonar.host.url>
-		<!--<sonar.login>9787d8595c5872771f9dc47058b5a384540a27f0</sonar.login> -->
-    <sonar.password>admin</sonar.password>
-    <sonar.login>admin</sonar.login>
 
         </properties>
 
@@ -46,22 +42,18 @@
                 <enabled>false</enabled>
             </releases>
             <snapshots>
-                <enabled>false</enabled>
+                <enabled>true</enabled>
             </snapshots>
         </repository>
-	</repositories>
+    </repositories>
 
     <pluginRepositories>
         <pluginRepository>
-            <id>nexus</id>
-	      <name>Landmark Technologies Snapshot Nexus Repository </name>
-	      <url>http:://172.31.0.106:8081/repository/india_project/</url>
+            <id>vaadin-snapshots</id>
+            <url>http://oss.sonatype.org/content/repositories/vaadin-snapshots/</url>
             <releases>
                 <enabled>false</enabled>
             </releases>
-		<id>nexus</id>
-	      <name>Landmark Technologies Releases Nexus Repository</name>
-	      <url>http://172.31.0.106:8081/repository/indiaproject//</url>
             <snapshots>
                 <enabled>true</enabled>
             </snapshots>

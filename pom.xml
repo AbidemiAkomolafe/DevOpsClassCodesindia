@@ -46,35 +46,22 @@
                 <enabled>false</enabled>
             </releases>
             <snapshots>
-                <enabled>true</enabled>
+                <enabled>false</enabled>
             </snapshots>
         </repository>
-    </repositories>
-	
-<distributionManagement>
-	    <repository>
-	      <id>nexus</id>
-	      <name>Landmark Technologies Releases Nexus Repository</name>
-	      <url>http://172.31.0.106:8081/repository/indiaproject//</url>
-	    </repository>
-	    
-	    <snapshotRepository>
-	      <id>nexus</id>
-	      <name>Landmark Technologies Snapshot Nexus Repository </name>
-	      <url>http:://172.31.0.106:8081/repository/india_project/</url>
-	    </snapshotRepository>
-	    
-	</distributionManagement>
-	
-	<build>
+	</repositories>
 
     <pluginRepositories>
         <pluginRepository>
-            <id>vaadin-snapshots</id>
-            <url>http://oss.sonatype.org/content/repositories/vaadin-snapshots/</url>
+            <id>nexus</id>
+	      <name>Landmark Technologies Snapshot Nexus Repository </name>
+	      <url>http:://172.31.0.106:8081/repository/india_project/</url>
             <releases>
                 <enabled>false</enabled>
             </releases>
+		<id>nexus</id>
+	      <name>Landmark Technologies Releases Nexus Repository</name>
+	      <url>http://172.31.0.106:8081/repository/indiaproject//</url>
             <snapshots>
                 <enabled>true</enabled>
             </snapshots>
